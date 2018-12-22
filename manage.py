@@ -20,16 +20,16 @@ def generate(dest='dist'):
     with open(mdfile, 'r', encoding='utf-8') as f:
         text = f.read()
 
-    css = '''<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><link rel="stylesheet" href="../style/style.css">'''
-
     md = mistune.Markdown()
     html = md(text)
 
     if dest == 'dist':
         with open('dist/index.html', 'w', encoding='utf-8') as f:
+            css = '''<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><link rel="stylesheet" href="../style/style.css">'''
             f.write('<html><head>' + css + '</head><body>' + html + '</body></html>')
     elif dest == 'docs':
         with open('docs/index.html', 'w', encoding='utf-8') as f:
+            css = '''<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><link rel="stylesheet" href="style/style.css">'''
             fork_github = '''<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.0/gh-fork-ribbon.min.css" />
                 <!--[if lt IE 9]>
                 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.0/gh-fork-ribbon.ie.min.css" />
