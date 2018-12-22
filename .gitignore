@@ -1,0 +1,6 @@
+*.log
+*.pyc
+*.swp
+*.swo
+.DS_Store
+pdf/
