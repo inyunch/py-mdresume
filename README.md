@@ -34,3 +34,4 @@ $ python manage.py -p toPDF -m /markdown/your-md-resume.md
 - [麻省理工(MIT)的履歷寫作建議 Five Steps to Writing a Great Resume](https://gecd.mit.edu/jobs-and-internships/resumes-cvs-cover-letters-and-linkedin/resumes)
 - [Fork me on GitHub – CSS ribbon](https://simonwhitaker.github.io/github-fork-ribbon-css/)
 - [wyde/md-resume-generator: 阿宅的 Markdown 履歷產生器 demo:](https://github.com/wyde/md-resume-generator/)
+- [Python Markdown Resume Generator | wyde's note](https://wyde.github.io/2017/10/03/Python-Markdown-Resume-Generator/)

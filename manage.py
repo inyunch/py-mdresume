@@ -42,6 +42,8 @@ def serve(dest='dist'):
     web_dir = os.path.join(os.path.dirname(__file__), dest)
     port = 5050
     os.chdir(web_dir)
+    socketserver.TCPServer.allow_reuse_address = True
+
     Handler = http.server.SimpleHTTPRequestHandler
     httpd = socketserver.TCPServer(("", port), Handler)
     logit('serving at port: {}'.format(port))
